@@ -622,7 +622,7 @@ export default class Dropdown extends PureComponent {
     props.style = [
       style,
       {
-        height: this.itemSize(),
+//         height: this.itemSize(),
         paddingLeft: leftInset,
         paddingRight: rightInset,
       },
@@ -630,7 +630,7 @@ export default class Dropdown extends PureComponent {
 
     return (
       <DropdownItem index={index} {...props}>
-        <Text style={[styles.item, itemTextStyle, textStyle]} numberOfLines={1}>
+        <Text style={[styles.item, itemTextStyle, textStyle]}>
           {title}
         </Text>
       </DropdownItem>
