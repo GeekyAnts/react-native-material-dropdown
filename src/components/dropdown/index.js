@@ -480,7 +480,7 @@ export default class Dropdown extends PureComponent {
 
     return (
       <View>
-        <Text style={{ fontSize: 12, color: '#666' }}>Questions</Text>
+        <Text style={{ fontSize: 12, color: '#666' }}>{this.props.label}</Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 0.5, borderBottomColor: '#999', paddingBottom: 4, paddingTop: 4 }}>
           <Text style={{ fontSize: 16, width: '90%' }}>{title}</Text>
           {renderAccessory()}
